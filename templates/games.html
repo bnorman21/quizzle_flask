@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block title %}
+Home
+{% endblock %}
+{% block content %}
+    {%if name %}
+        <span class="message">Hello there, {{ name }}!</span> It's {{ date.strftime("%A, %d %B, %Y at %X") }}.
+    {% else %}
+        <span class="message">What's your name? Provide it after /hello/ in the URL.</span>
+    {% endif %}
+    <br>
+    <br>
+    {%if team%}
+        <span class="message">Here are all the games the {{ team }} played</span>
+        <br>
+        {% for game in games %}
+            <span class="orange">
+                {{game -}}
+                <br>
+            </span>
+        {% endfor %}
+    {%endif%}
+{% endblock %}
