@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block title %}
+Make Quiz
+{% endblock %}
+{% block content %}
+    Lets Make a Quiz
+    <form action ='#' method="post">
+        <p>Quiz Name</p>
+        <p><input type = "text" name="qn"/> </p> 
+        <p>Number of Questions</p>
+        <p><input type = "number" name="num_q"/> </p> 
+        <p><input type = "submit" value = "submit"/> </p>
+    </form>
+{% endblock %}

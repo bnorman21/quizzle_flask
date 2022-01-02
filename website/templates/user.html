@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block title %}
+{{usr}}
+{% endblock %}
+{% block content %}
+    Hello {{usr}}
+    <a href="{{ url_for('make_quiz') }}" class="navbar-item">Make Quiz</a>
+    <a href="{{ url_for('take_quiz') }}" class="navbar-item">Take Quiz</a> 
+{% endblock %}

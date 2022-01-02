@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>{% block title %}{% endblock %}</title>
+        <title>{% b lock title %}{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
     </head>
 
@@ -10,8 +10,6 @@
         <div class="navbar">
             <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
             <a href="{{ url_for('about') }}" class="navbar-item">About</a>
-            <a href="{{ url_for('contact') }}" class="navbar-item">Contact</a>
-            <a href="www.mlb.com" class="navbar-item">Games</a>
         </div>
 
         <div class="body-content">
